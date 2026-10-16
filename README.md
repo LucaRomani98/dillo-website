@@ -52,15 +52,13 @@ Metadata for the qualitative examples and reproduced rollouts is available in [`
 ## Citation
 
 ```bibtex
-@misc{pappa2026describethenact,
+@inproceedings{pappa2026describethenact,
   title         = {Describe-Then-Act: Proactive Agent Steering via
                    Distilled Language-Action World Models},
   author        = {Massimiliano Pappa and Luca Romani and Valentino Sacco and
                    Alessio Palma and St\'ephane Lathuili\`ere and Fabio Galasso and
                    Xavier Alameda-Pineda and Indro Spinelli},
-  year          = {2026},
-  eprint        = {2603.23149},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.AI}
+  booktitle     = {European Conference on Computer Vision (ECCV)},
+  year          = {2026}
 }
 ```
