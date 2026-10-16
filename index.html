@@ -74,10 +74,12 @@
       <div class="container teaser" aria-label="DILLO prediction flow">
         <div class="teaser-grid">
           <div class="scene-window">
-            <div class="window-bar"><span></span><span></span><span></span><b>policy / observation</b></div>
-            <div class="robot-scene" aria-hidden="true">
-              <div class="grid-floor"></div><div class="robot-base"></div><div class="robot-arm arm-one"></div><div class="robot-arm arm-two"></div><div class="gripper"></div><div class="object"></div>
-              <span class="latent-tag">z<sub>t</sub></span><span class="action-tag">a<sub>t:t+k</sub></span>
+            <div class="window-bar"><span></span><span></span><span></span><b>LIBERO SPATIAL · LIVE ROLLOUT</b></div>
+            <div class="hero-observation">
+              <video autoplay loop muted playsinline preload="metadata" aria-label="DILLO-guided LIBERO robot rollout with external and wrist-camera views">
+                <source src="static/videos/qualitative/steering-dillo.mp4" type="video/mp4">
+              </video>
+              <div class="hero-signal" aria-hidden="true"><span>policy latent&nbsp; z<sub>t</sub></span><span>action chunk&nbsp; a<sub>t:t+k</sub></span></div>
             </div>
           </div>
           <div class="flow-arrow"><span>no visual rollout</span><svg viewBox="0 0 90 24" aria-hidden="true"><path d="M1 12h82m-9-9 10 9-10 9"/></svg></div>
