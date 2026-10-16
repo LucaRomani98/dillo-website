@@ -48,7 +48,7 @@
         <h1>DILLO</h1>
         <p class="expanded-name"><span>DI</span>sti<span>LL</span>ed Language-Acti<span>O</span>n World Model</p>
         <p class="paper-title">Describe-Then-Act: Proactive Agent Steering via<br class="desktop"> Distilled Language-Action World Models</p>
-        <div class="authors" aria-label="Authors">
+        <div class="authors" role="group" aria-label="Authors">
           <a href="https://github.com/MaxPappa">Massimiliano Pappa<sup>1,2,*</sup></a><span>·</span>
           <span>Luca Romani<sup>1,*</sup></span><span>·</span>
           <span>Valentino Sacco<sup>1,*</sup></span><span>·</span>
@@ -60,7 +60,7 @@
         </div>
         <div class="affiliations"><span><sup>1</sup> Sapienza University of Rome</span><span><sup>2</sup> Inria, Univ. Grenoble Alpes, CNRS, LJK</span></div>
         <p class="author-note"><sup>*</sup> Equal contribution</p>
-        <div class="resource-links" aria-label="Project resources">
+        <div class="resource-links" role="group" aria-label="Project resources">
           <a class="resource primary" href="https://arxiv.org/abs/2603.23149"><span class="icon-text">arXiv</span> Paper</a>
           <a class="resource" href="https://github.com/MaxPappa/DILLO" aria-label="DILLO code on GitHub">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.3 11.3 0 0 0-3.6 22c.6.1.8-.2.8-.5v-2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.7 4.7 0 0 1 1.2-3.2c-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.1 18 4.4 18 4.4c.6 1.6.2 2.9.1 3.2a4.7 4.7 0 0 1 1.2 3.2c0 4.6-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.2c0 .3.2.6.8.5A11.3 11.3 0 0 0 12 .7Z"/></svg>
@@ -71,7 +71,7 @@
         </div>
       </div>
 
-      <div class="container teaser" aria-label="DILLO prediction flow">
+      <div class="container teaser" role="group" aria-label="DILLO prediction flow">
         <div class="teaser-grid">
           <div class="scene-window">
             <div class="window-bar"><span></span><span></span><span></span><b>LIBERO SPATIAL · LIVE ROLLOUT</b></div>
@@ -93,7 +93,7 @@
       </div>
     </section>
 
-    <section class="summary" id="overview">
+    <div class="summary" id="overview">
       <div class="container">
         <p class="lead">DILLO turns a policy’s internal state and planned actions into <strong>human-readable foresight</strong>—without rendering the future.</p>
         <div class="metrics">
@@ -103,7 +103,7 @@
           <div><strong>+9.3 pp</strong><span>average success across tasks</span></div>
         </div>
       </div>
-    </section>
+    </div>
 
     <section class="section">
       <div class="container prose">
@@ -177,7 +177,7 @@
           <p>Each example pairs a prediction generated from the policy latent and proposed actions with the future trajectory that actually followed. DILLO does not observe these future frames at inference time.</p>
         </div>
 
-        <div class="qual-legend" aria-label="Gallery legend">
+        <div class="qual-legend" role="group" aria-label="Gallery legend">
           <span><i class="legend-dot positive"></i> predicted positive</span>
           <span><i class="legend-dot negative"></i> predicted negative</span>
           <span>one frame per action chunk · 2 fps</span>
