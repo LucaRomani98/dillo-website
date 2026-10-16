@@ -16,7 +16,7 @@
 
 /* Official resource marks and the paper's method figure. */
 .resource .brand-logo{display:block;width:19px;height:19px;object-fit:contain;flex:0 0 auto}
-.resource.primary .arxiv-mark{filter:invert(1)}
+.resource .arxiv-mark{width:20px;height:20px}
 .resource .hf-mark{width:21px;height:21px}
 .paper-figure{margin:0 0 42px;border:1px solid var(--line);background:#fff;padding:24px}
 .paper-figure img{width:100%;height:auto}
