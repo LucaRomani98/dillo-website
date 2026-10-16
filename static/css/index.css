@@ -34,3 +34,18 @@
 
 @media(max-width:900px){.steering-grid{grid-template-columns:1fr 1fr}.steering-grid figure:last-child{grid-column:1/-1}.steering-heading{display:block}.steering-heading>p{margin-top:12px}.qual-legend span:last-child{margin-left:0}}
 @media(max-width:680px){.steering-study{margin-top:50px;padding-top:35px}.steering-grid{grid-template-columns:1fr}.steering-grid figure:last-child{grid-column:auto}.steering-heading h3{font-size:27px}.qual-legend{gap:9px 15px}.video-shell>span{font-size:7px}}
+
+/* Slightly larger qualitative typography for comfortable reading. */
+#qualitative .section-heading>p:last-child{font-size:13px}
+.qual-legend{font-size:10px}
+.video-shell>span,.video-shell.rejected:after{font-size:9px}
+.verdict-label{font-size:10px}
+.qual-copy h3{font-size:17px}
+.qual-copy p{font-size:12.5px;line-height:1.65}
+.qual-copy small{font-size:10px;line-height:1.5}
+.steering-heading>p{font-size:13px}
+.steering-grid figcaption strong{font-size:13px}
+.steering-grid figcaption small{font-size:10px;line-height:1.45}
+.provenance-note{font-size:11px}
+
+@media(max-width:680px){.qual-copy h3{font-size:16px}.qual-copy p{font-size:12px}.video-shell>span,.video-shell.rejected:after{font-size:8px}}
