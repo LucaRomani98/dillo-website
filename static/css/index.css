@@ -14,6 +14,20 @@
 @media(max-width:900px){.hero-observation{height:206px}}
 @media(max-width:680px){.hero-observation{height:196px}.hero-signal{inset:auto 8px 8px}.hero-signal span{font-size:8px;padding:4px 6px}}
 
+/* Official resource marks and the paper's method figure. */
+.resource .brand-logo{display:block;width:19px;height:19px;object-fit:contain;flex:0 0 auto}
+.resource.primary .arxiv-mark{filter:invert(1)}
+.resource .hf-mark{width:21px;height:21px}
+.paper-figure{margin:0 0 42px;border:1px solid var(--line);background:#fff;padding:24px}
+.paper-figure img{width:100%;height:auto}
+.paper-figure figcaption{display:flex;justify-content:space-between;gap:28px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:11px;line-height:1.6}
+.paper-figure figcaption span{max-width:810px}
+.paper-figure figcaption strong{color:var(--ink)}
+.paper-figure figcaption a{flex:0 0 auto;color:var(--green);font-weight:700;text-decoration:none}
+.paper-figure figcaption a:hover{text-decoration:underline;text-underline-offset:3px}
+
+@media(max-width:680px){.paper-figure{margin-bottom:28px;padding:12px}.paper-figure figcaption{display:block}.paper-figure figcaption a{display:inline-block;margin-top:8px}}
+
 /* Real qualitative rollouts. */
 .good .verdict-label{color:var(--green2)}
 .qual-legend{display:flex;flex-wrap:wrap;gap:18px;margin:-6px 0 25px;color:#93a097;font:9px ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase}.qual-legend span:last-child{margin-left:auto}.legend-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:7px}.legend-dot.positive{background:var(--lime)}.legend-dot.negative{background:#e78e84}.real-gallery{gap:18px}.video-shell{position:relative;background:#0b0f0c;overflow:hidden;aspect-ratio:15/8}.video-shell video{display:block;width:100%;height:100%;object-fit:cover}.video-shell>span{position:absolute;left:10px;top:10px;padding:4px 7px;border:1px solid rgba(255,255,255,.2);border-radius:2px;background:rgba(12,18,14,.76);color:#dbe4dd;font:8px ui-monospace,monospace;letter-spacing:.08em;pointer-events:none}.qual-copy small{display:block;margin-top:14px;color:#68776e;font:9px ui-monospace,monospace}.steering-study{margin-top:72px;padding-top:45px;border-top:1px solid #334038}.steering-heading{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:25px}.steering-heading h3{font-family:Georgia,serif;font-size:32px;font-weight:400}.steering-heading>p{max-width:480px;color:#9eaaa2;font-size:12px}.steering-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.video-shell.wide{aspect-ratio:48/29}.video-shell.rejected:after{content:"REJECTED";position:absolute;right:10px;bottom:64px;padding:4px 7px;border-radius:2px;background:var(--red);color:#fff;font:8px ui-monospace,monospace;letter-spacing:.08em}.steering-grid figcaption{display:flex;justify-content:space-between;gap:15px;padding:13px 2px 0}.steering-grid figcaption strong{font-size:12px}.steering-grid figcaption small{color:#7d8a82;font-size:9px;text-align:right}.provenance-note{margin-top:32px;color:#718078;font-size:10px;text-align:center}
