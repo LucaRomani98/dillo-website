@@ -1,0 +1,80 @@
+{
+  "model": "google/gemma-3-1b-it",
+  "notes": "All descriptions and verdicts use one DILLO 1B model family. Dataset clips contain one rendered frame per action chunk. Steering clips are fresh simulator rollouts.",
+  "prediction_outcome_clips": [
+    {
+      "file": "spatial-bowl-misaligned-dillo.mp4",
+      "suite": "libero_spatial",
+      "qualitative_entry_id": 49,
+      "episode": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate/003",
+      "chunk_index": 0,
+      "verdict": "failure",
+      "label": 0,
+      "description_score": 0.75
+    },
+    {
+      "file": "spatial-bowl-approach-dillo.mp4",
+      "suite": "libero_spatial",
+      "qualitative_entry_id": 109,
+      "episode": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate/013",
+      "chunk_index": 1,
+      "verdict": "success",
+      "label": 1,
+      "description_score": 0.917
+    },
+    {
+      "file": "goal-open-drawer-dillo.mp4",
+      "suite": "libero_goal",
+      "qualitative_entry_id": 8,
+      "episode": "open_the_middle_drawer_of_the_cabinet/007",
+      "chunk_index": 2,
+      "verdict": "success",
+      "label": 1,
+      "description_score": 1.0
+    },
+    {
+      "file": "goal-wine-bottle-failure-dillo.mp4",
+      "suite": "libero_goal",
+      "qualitative_entry_id": 160,
+      "episode": "put_the_wine_bottle_on_top_of_the_cabinet/008",
+      "chunk_index": 9,
+      "verdict": "failure",
+      "label": 0,
+      "description_score": 1.0
+    },
+    {
+      "file": "libero10-book-caddy-dillo.mp4",
+      "suite": "libero_10",
+      "qualitative_entry_id": 267,
+      "episode": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy/002",
+      "chunk_index": 1,
+      "verdict": "success",
+      "label": 1,
+      "description_score": 0.833
+    },
+    {
+      "file": "libero10-cream-cheese-basket-dillo.mp4",
+      "suite": "libero_10",
+      "qualitative_entry_id": 184,
+      "episode": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket/004",
+      "verdict": "success",
+      "label": 1,
+      "human_mean_accuracy": 4.5
+    }
+  ],
+  "fresh_steering_rollout": {
+    "suite": "libero_spatial",
+    "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+    "episode": 0,
+    "seed": 42,
+    "act_checkpoint": "DILLO-Checkpoints/ACT Policy/LIBERO_SPATIAL/best_model.pth",
+    "dillo_checkpoint": "DILLO-Checkpoints/DILLO-1B/LIBERO_SPATIAL",
+    "baseline_success": true,
+    "gated_success": true,
+    "files": [
+      "steering-baseline-trace.mp4",
+      "steering-dillo-trace.mp4",
+      "steering-refused-action-trace.mp4"
+    ]
+  }
+}
